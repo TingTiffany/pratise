@@ -1,0 +1,25 @@
+.img-lst ul{
+	display: inline-block;
+	width: 640px;
+	padding: 0;
+	margin: 0;
+}
+.img-lst ul li{
+	display: inline-block;
+	float: left;
+	width: 25%;
+	height: 170px;
+	list-style-type: none;
+}
+li.img1{
+	background: url(../img/mm2.jpg) no-repeat;
+}
+li.img2{
+	background: url(../img/mm3.jpg) no-repeat;
+}
+li.img3{
+	background: url(../img/mm4.jpg) no-repeat;
+}
+li.img4{
+	background: url(../img/mm6.jpg) no-repeat;
+}

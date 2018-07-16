@@ -1,0 +1,22 @@
+ul{
+    display: inline-block;
+    width: 350px;
+    height: 20px;
+    margin: 0;
+    line-height: 20px;
+}
+ul > li{
+	display: none;
+	position: absolute;
+}
+
+.fade{
+	width: 8px;
+	height: 18px;
+	overflow: hidden;
+}
+.fade p{
+	display: inline-block;
+    margin: 0;
+    padding: 0;
+}

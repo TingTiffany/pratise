@@ -1,0 +1,79 @@
+.claspha{
+	
+}
+.claspha>ul.claspha-01{
+	display: inline-block;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+ul.claspha-01>li{
+	float: left;
+    display: inline-block;
+    position: relative;
+    height: 40px;
+}
+ul.claspha-01>li.arrow-r{
+	background: url(../img/arrow-r-3.png) no-repeat center right;
+}
+ul.claspha-01>li>a{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    line-height: 40px !important;
+    margin-right: 8px;
+    padding: 0px 8px;
+    font: bold 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #666;
+    text-decoration: none;
+    vertical-align: top;
+    background: #fff;
+    z-index: 1;
+}
+ul.claspha-01>li:hover >a{
+	color: #f96302;
+}
+ul.claspha-01>li.arrow-r:hover >a{
+	border: 1px solid #f96302;
+	border-bottom: none;
+	z-index: 3;
+}
+
+
+ul.claspha-01>li>ul.claspha-02{
+    display: none;
+    position: absolute;
+    top: 40px;
+		max-height: 200px;
+    margin: 0px;
+    padding: 0px 15px 2px 0px;
+    border: 1px solid #f96302;
+    list-style-type: none;
+    z-index: 2;    
+    background: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+ul.claspha-01>li:hover >ul.claspha-02{
+	display: inline-block;
+}
+ul.claspha-02>li{
+    float: left;
+    display: inline-block;
+	height: 20px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 20px;
+}
+ul.claspha-02>li>a{
+    display: inline-block;
+	padding: 0px 10px 0 5px;
+	font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #666;
+	text-decoration: none;
+    white-space: nowrap;
+}
+ul.claspha-02>li:hover >a{
+	color: #f96302;
+}

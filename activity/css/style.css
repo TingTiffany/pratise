@@ -1,0 +1,270 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.whole{
+	width: 640px;
+	height: auto;	
+	margin: 0 auto;
+	color: #fff;
+	background-color: #2ea7ed;
+}
+.whole>img.bg-logo{
+	max-width: 100%;
+	height: auto;
+}
+.whole>.lucky-draw{
+	position: relative;
+	margin: 0 2em;
+}
+.notice>i.bg-notice{
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	background: url(../img/10.png) no-repeat center;
+	background-size: 1.5em 1.5em;
+}
+.notice>ul.lst-notice{
+	display: inline-block;
+	height: 1.5em;
+	line-height: 1.5em;
+	overflow: hidden;
+}
+ul.lst-notice>li{
+	font-size: 1em;
+	list-style: none;
+}
+.lucky-draw>p.opp-count{
+	position: absolute;
+	right: 0;
+	font-size: 0.9em;
+}
+p.opp-count>b{
+	font-size: 0.9em;
+	font-weight: 100;
+}
+.lucky-draw>.circle{
+	position: relative;
+	margin: 1em auto;
+	text-align: center;
+}
+.circle>img.circle-01{
+	max-width: 100%;
+}
+.circle>img.circle-02{
+	position: absolute;
+	top: 195px;
+	left: 50%;
+	width: 20%;
+	margin-left: -10%;
+	cursor: pointer;
+}
+.lucky-draw>.lst-btn{
+	text-align: center;
+	margin-bottom: 2em;
+}
+.lucky-draw>.lst-btn>button{
+	display: inline-block;
+	width: 8em;
+	height: 3em;
+	margin-right: 4em;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 600;
+	line-height: 2em;
+	border: none;
+	border-radius: 2em;
+	background-color: #fbc11e;
+	outline: none;
+	cursor: pointer;
+}
+.lucky-draw>.lst-btn>button:last-child{
+	margin-right: 0;
+}
+.whole .title{
+	position: relative;
+}
+.whole .title>h2{
+	font-size: 1.5em;
+	line-height: 2.8em;
+	border-bottom: 2px solid #fff;
+}
+.whole .title>i{
+	position: absolute;
+	display: inline-block;
+	top: 1.9em;
+	right: 3em;
+	width: 1.4375em;
+	height: 0.5em;
+	cursor: pointer;
+}
+.whole .title>i.btn-arrowd{
+	background: url(../img/arrowd.png) no-repeat center;
+}
+.whole .title>i.btn-arrowu{
+	background: url(../img/arrowu.png) no-repeat center;
+}
+.whole>.rule{
+	margin: 0 2em;
+}
+.rule>.rule-detail>p{
+	font-size: 1em;
+	line-height: 1.875em;
+}
+.whole>.prize{
+	margin: 0 2em;
+}
+.prize>.lst-prize{
+	margin-bottom: 1em;	
+	zoom: 1;
+}
+.prize>.lst-prize:after{
+	display: block;
+	content: "";
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.lst-prize>.prize-info{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.prize-info>img.prize-img{
+	max-width: 100%;
+}
+.prize-info>a.prize-nam{
+	color: #fff;
+	font-size: 0.75em;
+	font-weight: 100;
+	text-decoration: none;
+}
+.prize-info>a.prize-nam:hover{
+	text-decoration: underline;
+}
+.prize>p.tip{
+	font-size: 0.75em;
+}
+.pop-dim{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+.pop-info{
+	position: fixed;
+	display: none;
+	top: 50%;
+	left: 50%;
+	color: #000;
+	background: #FFFFFF;
+	z-index: 2;
+	-wekit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+@-webkit-keyframes run{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+@-moz-keyframes run{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+@-ms-keyframes run{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+@-o-keyframes run{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+@keyframes run{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+.run{
+	-webkit-animation: run 0.5s linear 0s 5 normal;
+	-moz-animation: run 0.5s linear 0s 5 normal;
+	-ms-animation: run 0.5s linear 0s 5 normal;
+	-o-animation: run 0.5s linear 0s 5 normal;
+	animation: run 0.5s linear 0s 5 normal;
+}
+
+@media screen and (max-width: 640px){
+	.whole{
+		width: 600px;
+	}
+}
+@media screen and (max-width: 480px){
+	.whole{
+		width: 400px;
+	}
+	.circle > img.circle-02{
+		top: 122px;
+	}
+	.lucky-draw > .lst-btn > button{
+		width: 6em;
+		font-size: 1.1em;
+	}
+	.rule > .rule-detail > p{
+		font-size: 0.9em;
+	}
+}
+@media screen and (max-width: 384px) {
+	.whole{
+		width: 360px;
+	}
+	.lucky-draw > p.opp-count{
+		font-size: 0.8em;
+	}
+	.circle > img.circle-02 {
+	    top: 108px;
+	}
+	.rule > .rule-detail > p {
+	    font-size: 0.8em;
+	}
+}
+@media screen and (max-width: 360px) {
+	.whole{
+		width: 280px;
+	}
+	.whole > .lucky-draw{
+		margin: 0 0.5em;
+	}
+	ul.lst-notice > li{
+		font-size: 0.8em;
+	}
+	.circle > img.circle-02{
+		top: 96px;
+	}
+	.lucky-draw > .lst-btn > button{
+		margin-right: 2em;
+		font-size: 1em;
+	}
+	.whole .title > h2{
+		font-size: 1.2em;
+		line-height: 1.8em;
+	}
+	.whole .title > i{
+		top: 1em;
+		right: 1em;
+	}
+	.lst-prize > .prize-info{
+		width: 50%;
+	}
+}

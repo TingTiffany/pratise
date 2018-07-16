@@ -1,0 +1,249 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#ndar{
+	display: inline-block;
+	position: relative;
+	border: 1px solid #000;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.date-box {
+	display: inline-block;
+	position: absolute;
+	width: 268px;
+	height: auto;
+	border: 1px #296ecc solid;
+	background-color: #fff;
+	font: 14px Arial;
+	overflow: hidden;
+	cursor: default;
+}
+
+.date-box>.date-top {
+	float: left;
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background-color: #296ecc;
+	overflow: hidden;
+}
+
+.date-top>b {
+	float: left;
+	display: inline-block;
+	width: 5%;
+	height: auto;
+	text-align: right;
+	cursor: pointer;
+}
+
+.date-top>b.btn-arrowr {
+	text-align: left;
+}
+
+.date-top>.date-title {
+	float: left;
+	display: inline-block;
+	width: 90%;
+	height: auto;
+	text-align: center;
+}
+
+.date-title>i {
+	font-style: normal;
+	cursor: pointer;
+}
+
+.date-box>.date-mid {
+	float: left;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+}
+
+.date-mid>table.days-tbl,
+.date-mid>table.mth-tbl,
+.date-mid>table.year-tbl {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.days-tbl tr th,
+.days-tbl tr td {
+	width: 14.28%;
+	height: 30px;
+	text-align: center;
+}
+
+.days-tbl tr th {
+	background-color: #F5F5F5;
+}
+
+.days-tbl tr td {
+	cursor: pointer;
+}
+
+.days-tbl tr td.date-prev,
+.days-tbl tr td.date-next {
+	color: #b2d0f8;
+}
+
+.mth-tbl tr td {
+	width: 33.3%;
+	height: 52.5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.year-tbl tr td {
+	width: 33.3%;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.days-tbl tr td.date-cur,
+.mth-tbl tr td.date-cur,
+.year-tbl tr td.date-cur {
+	color: #FFFFFF;
+	background-color: #296ecc;
+}
+
+.date-box>.date-btm {
+	float: left;
+	display: inline-block;
+	width: 100%;
+	height: 32px;
+	padding-top: 2px;
+	background-color: #F5F5F5;
+	overflow: hidden;
+}
+
+.date-btm>.date-time {
+	float: left;
+	display: inline-block;
+	width: 48%;
+	height: 100%;
+	margin-left: 5px;
+	overflow: hidden;
+	line-height: 32px;
+}
+
+.date-time>.date-hour,
+.date-time>.date-min,
+.date-time>.date-sec {
+	float: left;
+	display: inline-block;
+	width: 33.3%;
+	height: 28px;
+}
+
+.date-time b {
+	display: inline-block;
+	width: 70%;
+	height: 100%;
+	text-align: center;
+	font-weight: normal;
+	border: 1px #ddd solid;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.date-time i {
+	font-style: normal;
+}
+
+.date-btm>.date-btn {
+	float: right;
+	display: inline-block;
+	width: 49%;
+	height: 100%;
+	padding-right: 3px;
+	line-height: 34px;
+	overflow: hidden;
+}
+
+.date-btn>a {
+	float: right;
+	display: inline-block;
+	height: 28px;
+	margin: 1px 2px 0px 2px;
+	padding: 0 3px;
+	line-height: 28px;
+	font-size: 12px;
+	color: #fff;
+	background: #296ecc;
+	cursor: pointer;
+}
+
+.date-box>.time-lst {
+	display: none;
+	position: absolute;
+	bottom: 34px;
+	left: 0px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.time-lst>.hour-tbl,
+.time-lst>.min-tbl,
+.time-lst>.sec-tbl {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.hour-tbl tr th,
+.min-tbl tr th,
+.sec-tbl tr th {
+	position: relative;
+	height: 35px;
+	line-height: 35px;
+	background-color: #f5f5f5;
+}
+
+.hour-tbl tr th>i,
+.min-tbl tr th>i,
+.sec-tbl tr th>i {
+	font-style: normal;
+}
+
+.hour-tbl tr th>b.btn-close,
+.min-tbl tr th>b.btn-close,
+.sec-tbl tr th>b.btn-close {
+	position: absolute;
+	right: 15px;
+	font-size: 24px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.hour-tbl tr td,
+.min-tbl tr td,
+.sec-tbl tr td {
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.hour-tbl tr td {
+	width: 20%;
+}
+
+.min-tbl tr td,
+.sec-tbl tr td {
+	width: 10%;
+}
+
+.hour-tbl tr td.time-cur,
+.min-tbl tr td.time-cur,
+.sec-tbl tr td.time-cur {
+	color: #FFFFFF;
+	background-color: #296ecc;
+}

@@ -1,0 +1,72 @@
+.imgroller{
+	position: relative;
+	display: inline-block;
+}
+.imgroller>.imgroller-01{
+	position: relative;
+	display: inline-block;
+	width: 730px;
+	height: 456px;
+	overflow: hidden;
+}
+.imgroller-01>b{
+	display: none;
+	position: absolute;
+	top: 208px;
+	width: 40px;
+	height: 40px;
+	z-index: 2;
+	cursor: pointer;
+}
+.imgroller-01>b.arrow-l{
+	left: 5px;
+	background: url(../img/arrow-l-2.png) no-repeat center;
+}
+.imgroller-01>b.arrow-r{
+	right: 5px;
+	background: url(../img/arrow-r-4.png) no-repeat center;
+}
+.imgroller-01:hover >b{
+	display: inline-block;
+}
+.imgroller-01>ul.imgroller-ul{
+	position: relative;
+	display: inline-block;
+	width: 3650px;
+	height: 456px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	z-index: 1;
+}
+ul.imgroller-ul>li{
+	float: left;
+}
+.imgroller>.imgroller-02{
+	display: inline-block;
+	position: absolute;
+	left: 322.5px;
+    bottom: 5px;
+	z-index: 2;
+}
+.imgroller-02>ul{
+	display: inline-block;
+	width: 85px;
+	height: 12px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.imgroller-02>ul>li{
+	float: left;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 5px;
+	border-radius: 6px;
+	background-color: #76828e;
+	cursor: pointer;
+}
+.imgroller-02>ul>li.hover{
+	background-color: #fff;
+}

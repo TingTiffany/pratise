@@ -1,0 +1,221 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.effect1{
+	position: relative;
+	width: 220px;
+	height: 220px;
+	margin-bottom: 25px;
+}
+.effect1 a .cirque{
+	width: 210px;
+	height: 210px;
+	border: 10px solid orange;
+	border-right-color: limegreen;
+	border-bottom-color: limegreen;
+	border-radius: 50%;
+	transition: all 0.8s ease-in-out;
+}
+.effect1 a .img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: auto;
+    height: auto;
+}
+.effect1 a .img>img{
+	width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.effect1 a .info{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+}
+.effect1 a:hover .cirque{
+	transform: rotate(180deg);
+}
+.effect1 a:hover .info{
+	opacity: 1;
+}   
+
+
+.circle{
+	position: relative;
+	width: 220px;
+	height: 220px;
+	margin-bottom: 25px;
+}
+.circle a .img{
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+.circle a .img:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+	box-shadow: 0px 0px 0px 15px rgba(255,255,255,0.6) inset;
+}
+.circle a .img>img{
+	width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.circle a .info{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in-out;
+    transform: translateY(100%);
+    pointer-events: none;
+} 
+.effect2 a:hover .img{
+	transform: rotate(90deg);
+}
+.effect2 a:hover .info{
+	opacity: 1;
+	transform: translateY(0);
+}
+.effect3 a .img{
+	z-index: 1;
+}
+.effect3 a:hover .img{
+	transform: translateY(-50%) scale(0.5, 0.5);
+}
+.effect3 a:hover .info{
+	opacity: 1;
+	transform: translateY(0);
+}
+.effect4 a:hover .img{
+	opacity: 0;
+	transform: translateY(-100%);
+}
+.effect4 a:hover .info{
+	opacity: 1;
+	transform: translateY(0);
+}
+.effect5 a .info{
+	transform: translateY(0);
+}
+.effect5 a:hover .info{
+	opacity: 1;
+	transform: rotateY(180deg);
+}
+.effect6 a:hover .img{
+	opacity: 0;
+	transform: scale(1.5, 1.5);
+}
+.effect6 a .info{
+	top: 55px;
+    left: 55px;
+	width: 110px;
+    height: 110px;
+	transform: translateY(0);
+}
+.effect6 a:hover .info{
+	opacity: 1;
+	transform: scale(2, 2);
+}
+.effect7 a:hover .img{
+	opacity: 0;
+	transform: scale(0.5, 0.5);
+}
+.effect7 a .info{
+    top: -110px;
+    left: -110px;
+    width: 440px;
+    height: 440px;
+	transform: translateY(0);
+}
+.effect7 a:hover .info{
+	opacity: 1;
+	transform: scale(0.5, 0.5);
+}
+.effect8 a:hover .img{
+	opacity: 0;
+	transform: scale(0.5, 0.5);
+}
+.effect8 a .info{
+    top: 55px;
+    left: 55px;
+	width: 110px;
+    height: 110px;
+	transform: translateY(0);
+}
+.effect8 a:hover .info{
+	opacity: 1;
+	transform: scale(2, 2);
+}
+.effect9 a:hover .img{
+	opacity: 0;
+	transform: scale(0.5, 0.5);
+}
+.effect9 a:hover .info{
+	opacity: 1;
+	transform: translateY(0);
+}
+.effect10 a .img{
+	pointer-events: none;
+}
+.effect10 a .info{
+	top: 55px;
+    left: 55px;
+	width: 110px;
+    height: 110px;
+	transform: translateY(0);
+}
+.effect10 a:hover .img{
+	opacity: 0;
+	transform: translateX(100%) rotate(180deg);
+}
+.effect10 a:hover .info{
+	opacity: 1;
+	transform: scale(2, 2);
+}
+.effect11 a .info{
+	top: 55px;
+    left: 55px;
+	width: 110px;
+    height: 110px;
+	transform: translateY(0);
+}
+.effect11 a:hover .img{
+	transform: scale(0.5, 0.5) rotateY(90deg);
+}
+.effect11 a:hover .info{
+	opacity: 1;
+	transform: scale(2, 2);
+}
+.effect12 a .info{
+	transform: translateY(100%) rotate(180deg);
+}
+.effect12 a:hover .img{
+	opacity: 0;
+	transform: translateY(100%) rotate(180deg);
+}
+.effect12 a:hover .info{
+	opacity: 1;
+	transform: translateY(0) rotate(-360deg);
+}

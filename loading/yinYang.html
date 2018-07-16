@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.yinyang-01{
+				position: relative;
+				display: inline-block;
+				width: 200px;
+				height: 200px;
+				border: 1px solid #d4d4d4;
+				border-radius: 200px;
+				background: #fff;
+				animation: rolling 5s infinite linear;
+			}
+			.yinyang-02{
+				position: absolute;
+				display: inline-block;
+				border: 100px solid transparent;
+				border-top-color: #000000;
+				border-left-color: #000000;
+				border-radius: 200px;
+    			transform: rotate(-45deg);
+			}
+			.yinyang-03{
+				position: absolute;
+				display: inline-block;
+				left: 50px;
+				border: 50px solid #000000;
+				border-radius: 100px;
+			}
+			.yinyang-0301{
+				position: absolute;
+				display: inline-block;
+				top: -10px;
+				border: 10px solid #ffffff;
+				border-radius: 20px;
+			}
+			.yinyang-04{
+				position: absolute;
+				display: inline-block;
+				top: 100px;
+				left: 50px;
+				border: 50px solid #ffffff;
+				border-radius: 100px;
+			}
+			.yinyang-0401{
+				position: absolute;
+				display: inline-block;
+				top: -10px;
+				border: 10px solid #000000;
+				border-radius: 20px;
+			}
+			@keyframes rolling{
+				0%{
+					transform: rotate(0deg);
+				}
+				100%{
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="yinyang-01">
+			<div class="yinyang-02"></div>
+			<div class="yinyang-03">
+				<span class="yinyang-0301"></span>
+			</div>
+			<div class="yinyang-04">
+				<span class="yinyang-0401"></span>
+			</div>
+		</div>
+	</body>
+</html>

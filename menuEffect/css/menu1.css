@@ -1,0 +1,28 @@
+.menu-lst{
+	display: inline-block;
+    position: relative;
+	padding: 15px 0px 15px 15px;
+	border: 1px solid #bcbcbc;
+}
+.menu-lst ul{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.menu-lst ul li{
+    position: relative;
+	float: left;
+	margin-right: 15px;
+	list-style-type: none;
+	cursor: pointer;
+    z-index: 3;
+}
+.menu-lst ul .back{
+    position: absolute;
+    height: 30px;
+    padding: 0px 5px;
+    /*border: 1px solid #bcbcbc;
+    background: #eeeeee;*/
+   	border-bottom: 2px solid #bcbcbc;
+    z-index: 2;
+}

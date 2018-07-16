@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<ul class="news">
+		    <li style='display: list-item'>二套房贷首付或提至50% 政府拟打压楼市</li>
+		    <li>陈云林抵台参加会谈 向绿营抗议者挥手</li>
+		    <li>全国猪肉出场价连涨6周 农产品涨价幅度大</li>
+		    <li>社会蓝皮书：明年底人均GDP将接近4000美元</li>
+		    <li>媒体称中央拟明年推行官员任用提名新制度</li>
+		    <li>中法167亿建核电公司 合资造大飞机发动机</li>
+		</ul>
+		<div class="fade">
+		    <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p>
+		</div>
+		<div class="fade">
+		    <p>a</p><p>b</p><p>c</p><p>d</p><p>e</p><p>f</p><p>g</p><p>h</p><p>i</p>
+		</div>
+		<script type="text/javascript" src="../js/jquery-1.8.1.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script>
+			var cnt = $('ul.news').children().length - 1;
+			$('ul.news').innerfade({
+				'animatetype': 'slide',
+				'speed': 750,
+				'timeout': 2000,
+				'cnt': cnt
+			});
+			cnt = $('div.fade').eq(0).children().length - 1;
+			console.log(cnt);
+			$('div.fade').innerfade({
+				'animatetype': 'fade',
+				'speed': 1000,
+				'timeout': 1000,
+				'cnt': cnt
+			});
+		</script>
+	</body>
+</html>

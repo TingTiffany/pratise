@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.flower-01{
+				position: relative;
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				margin-left: 100px;
+				margin-top: 100px;
+				animation: rolling 5s infinite linear;
+			}
+			.flower-01:hover{
+				animation: none;
+			}
+			.flower-01>.flower-heart{
+				position: absolute;
+				display: inline-block;
+				top: 25px;
+    			left: 25px;
+				width: 50px;
+				height: 50px;
+				border-radius: 50px;
+				background: white;
+			}
+			.flower-01>.flower-leaf{
+				position: absolute;
+				display: inline-block;    
+				width: 100px;
+				height: 100px;
+				border-radius: 10px;
+				background: pink;
+			}
+			.flower-01>.leaf-02{
+				transform: rotate(30deg);
+			}
+			.flower-01>.leaf-03{
+				transform: rotate(60deg);
+			}
+			@keyframes rolling{
+				from{
+					transform: rotate(0deg);
+				}
+				to{
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="flower-01">
+			<div class="flower-leaf leaf-01"></div>
+			<div class="flower-leaf leaf-02"></div>
+			<div class="flower-leaf leaf-03"></div>
+			<div class="flower-heart"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#head_bottom{
+				background-repeat:no-repeat;
+				width:940px;
+				height:408px;
+			}
+		</style>
+	</head>
+	<body onload="showPicture1()">
+		
+		<div id="head_bottom">
+			<img id="picture1" src="img/head1.jpg" />
+		    <img id="picture2" src="img/head2.jpg" style="display:none;"/>
+		    <img id="picture3" src="img/head3.jpg" style="display:none;"/>
+		</div>
+		
+		<script type="text/javascript" src="../js/jquery-1.8.1.min.js"></script>
+		<script type="text/javascript">
+			var n=0;
+			function showPicture1(){
+				var pictures=document.getElementsByTagName("img");
+				for(var i=0;i<pictures.length;i++){
+					var picture=pictures[i];
+					if(picture.style.display!='none')
+						n=picture.id.substr(7);	
+				}
+				$("#picture"+n).fadeOut('slow').hide();
+				n++;
+				if(n>3)
+					n=1;
+				$("#picture"+n).fadeIn('slow').show('slow');
+				setTimeout('showPicture1()',3000);
+			}
+			
+			function showPicture2(){
+				n++;
+				if(n>3)
+					n=1;
+				$("#head_bottom").css("-webkit-transition","1s");
+				$("#head_bottom").css("background-image","url(head"+n+".jpg)");
+				setTimeout('showPicture2()',3000);
+			}
+		</script>
+	</body>
+</html>

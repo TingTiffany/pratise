@@ -1,0 +1,209 @@
+.clear {
+	clear: both;
+	overflow: hidden;
+}
+.display-n{
+	display: none;
+}
+
+
+/*menu总体*/
+.menu {
+	display: inline-block;
+}
+
+
+/*menu的总标题*/
+.menu>.menu-title {
+	display: block;
+	width: 220px;
+	height: 40px;
+	padding: 0px 8px;
+	font: 16px Arial;
+	font-weight: bold;
+	color: #fff;
+	background: #02a0e2;
+	cursor: pointer;
+}
+.menu-title>a {
+	float: left;
+	line-height: 40px;
+}
+.menu-title>i.arrow-du {
+	float: right;
+	display: inline-block;
+	width: 17px;
+	height: 35.5px;
+	background: url(../img/arrow-d.png) no-repeat center;
+	transition: all 0.1s linear;
+}
+.menu:hover i.arrow-du {
+	transform: rotate(180deg);
+}
+
+
+/*menu的列表*/
+.menu>.menu-content {
+    display: none;
+    height: 445px;
+	background: #00acf4;
+}
+.menu:hover .menu-content {
+	display: inline-block;
+}
+.menu-content>.menu-lst{
+    display: block;
+    height: 421px;
+}
+.menu-lst>ul {
+	position: relative;
+	width: 235px;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #00acf4;
+	border-right: none;
+	list-style-type: none;
+}
+.menu-lst>ul>li:hover {
+	background: #fff;
+}
+
+
+/*menu的左侧列表*/
+.menu-lst>ul>li>.content-01 {
+	position: relative;
+	height: 30px;
+	padding: 0px 8px;
+	line-height: 30px;
+}
+.content-01>a {
+    display: inline-block;
+    width: 210px;
+    font: 13px Arial;
+    color: #fff;
+    line-height: 30px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.menu-lst>ul>li:hover .content-01>a {
+	color: #00acf4;
+	text-decoration: none;
+}
+.content-01>i.arrow-r {
+	position: absolute;
+	display: inline-block;
+	top: 0px;
+	right: 8px;
+	width: 6px;
+	height: 30px;
+	background: url(../img/arrow-r.png) no-repeat center;
+	z-index: 0;
+}
+.menu-lst>ul>li:hover .content-01>i.arrow-r {
+	right: -1px;
+	background: #fff;
+	z-index: 1;
+}
+
+
+/*menu的右侧列表*/
+.menu-lst>ul>li>.content-02 {
+	display: none;
+	position: absolute;
+	top: -1px;
+	left: 234px;
+	width: 790px;
+	height: 443px;
+	overflow: hidden;
+	border: 1px solid #00acf4;
+}
+.menu-lst>ul>li:hover>.content-02 {
+	display: block;
+}
+.content-02>ul {
+	width: 804px;
+	height: 430px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.content-02>ul>li {
+	margin: 10px 0px;
+}
+.content-02 .content-02-l {
+	float: left;
+	display: inline-block;
+	width: 125px;
+	margin-right: 10px;
+	text-align: right;
+	vertical-align: top;
+}
+.content-02 .content-02-l>a {
+	font: 13px Airal;
+	color: #666;
+	font-weight: bold;
+	text-decoration: none;
+}
+.content-02 .content-02-l>a:hover {
+	color: #00acf4;
+}
+.content-02 .content-02-r {
+	float: left;
+	display: inline-block;
+	width: 640px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	color: #666;
+}
+.content-02-r>ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.content-02-r>ul>li {
+	float: left;
+	height: 16px;
+	margin-bottom: 5px;
+	padding: 0px 5px;
+	line-height: 16px;
+	border-left: 1px solid #ccc;
+}
+.content-02-r>ul>li>a {
+	display: inline-block;
+	font: 13px Airal;
+	color: #666;
+	text-decoration: none;
+	vertical-align: top;
+}
+.content-02-r>ul>li>a:hover {
+	color: #00acf4;
+}
+
+
+/*menu列表的分页按钮*/
+.menu-content>.menu-btn{
+    display: block;
+    height: 24px;
+    text-align: center;
+    color: #fff;
+}
+.menu-btn>b{
+	float: left;
+	display: inline-block;
+	width: 59px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	cursor: pointer;
+    background: #139cd4;
+}
+.menu-btn>b.btn-prev{
+	background: url(../img/arrow-l-1.png) no-repeat center;
+}
+.menu-btn>b.btn-next{
+	background: url(../img/arrow-r-1.png) no-repeat center;
+}

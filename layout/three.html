@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.container{
+				padding: 0 300px 0 200px;
+			}
+			.container:after{
+				content: '';
+				display: block;
+				height: 0;
+				visibility: hidden;
+				clear: both;
+			}
+			.main, .right, .left{
+				float: left;
+				position: relative;
+				height: 200px;
+				margin-top: -21px;
+			}
+			.main{
+				width: 100%;
+				background-color: #abc;
+			}
+			.left{
+				left: -200px;
+				width: 200px;
+				margin-left: -100%;
+				background-color: #cde;
+			}
+			.right{
+				right: -300px;
+				width: 300px;
+				margin-left: -300px;
+				background-color: #cde;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container"> 
+	　　<div class="main">首先让讲解了下自己所做的一些项目，然后面试官揪着我的讲解提了些问题：css盒模型和动画，网站主题实现方案，小程序webview里的js-sdk能做什么不能做什么，iOS下input 无法自动聚焦的问题。这种基于项目的提问，只要项目是自己做的，并且有深刻印象的话回答起来应该说都是送分题</div> 
+	　　<div class="left">left</div> 
+	　　<div class="right">right</div> 
+		</div>
+	</body>
+</html>

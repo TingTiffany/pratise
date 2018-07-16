@@ -1,0 +1,13 @@
+.up-img{
+	width: 512px;
+	height: 384px;
+}
+.down-img{
+	width: 512px;
+	height: 192px;
+	opacity: 0.5;
+	overflow: hidden;
+}
+.down-img img{
+	transform: scale(1, -1);
+}

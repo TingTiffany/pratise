@@ -1,0 +1,22 @@
+.div-spic{
+	display: inline-block;
+	position: relative;
+	padding: 5px;
+	border: 1px solid #cccccc;
+	vertical-align: top;
+}
+.div-bpic{
+	display: inline-block;
+	position: absolute;
+	top: -1px;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #cccccc;
+	overflow: hidden;
+	z-index: 1;
+}
+.img-bpic{
+	position: absolute;
+	top: 0;
+	left: 0;
+}

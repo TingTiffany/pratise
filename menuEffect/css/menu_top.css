@@ -1,0 +1,186 @@
+.menu-whole{
+    position: relative;
+    display: inline-block;
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: left;
+    background: #32323a;
+}
+
+
+/*---menu样式---*/
+.menu{
+	float: left;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    background: #32323a;
+    z-index: 1;
+}
+
+/*menu-01样式*/
+.menu>ul.menu-01{
+	display: inline-block;
+	width: auto;
+	height: 40px;
+}
+ul.menu-01>li{
+	float: left;
+    height: 40px;
+}
+ul.menu-01>li>a{
+    padding-right: 15px;
+    background: url(../img/arrow-d-1.png) no-repeat right;
+}
+
+ul.menu-01>li.menu-seld>a{
+	color: #ccc;
+}
+ul.menu-01>li:hover >a{
+	color: #f96302;
+	background-image: url(../img/arrow-u-1.png);
+}
+
+/*menu-02样式*/
+ul.menu-01>li>ul.menu-02{
+    top: 40px;
+}
+ul.menu-01>li:hover ul.menu-02{
+	display: block;
+}
+ul.menu-02>li:hover >a{
+	color: #f96302;
+}
+
+/*menu-03样式*/
+ul.menu-02>li:hover >ul.menu-03{
+	display: block;
+}
+ul.menu-03>li:hover >ul.menu-03{
+	display: block;
+}
+ul.menu-03>li:hover >a{
+	color: #f96302;
+}
+
+/*ul公用样式*/
+.menu ul{
+    min-width: 100%;
+	margin: 0px;
+	padding: 0px;
+    list-style-type: none;
+    background: #32323a;
+}
+ul.menu-01 ul{
+    display: none;
+    position: absolute;
+}
+ul.menu-01>li.drop-r ul.menu-02{
+    left: 0;
+}
+ul.menu-01>li.drop-r ul.menu-03{
+    top: 0px;
+    left: 100%;
+}
+ul.menu-01>li.drop-l ul.menu-02{
+	right: 0px;
+}
+ul.menu-01>li.drop-l ul.menu-03{
+    top: 0px;
+	right: 100%;
+}
+
+/*li公用样式*/
+ul.menu-01 li{
+    position: relative;
+}
+ul.menu-01 li.menu-seld{
+	background-color: #4f4f58;
+}
+
+/*a公用样式*/
+ul.menu-01 a{
+	display: inline-block;
+	height: 40px;
+    margin: 0 10px;
+	font: normal 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 40px;
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+}
+
+
+
+/*---nav样式---*/
+.nav{
+	float: left;
+    display: inline-block;
+    width: 100%;
+    height: 39px;
+    border-top: 1px solid #000;
+    color: #ccc;
+    background-color: #4f4f58;
+}
+.nav>ul.nav-01{
+    display: block;
+    width: auto;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+ul.nav-01>li{
+	float: left;
+}
+ul.nav-01>li.arrow-r{
+    padding-right: 15px;
+	background: url(../img/arrow-r-2.png) no-repeat right;
+}
+ul.nav-01>li>b{
+    display: inline-block;
+    height: 40px;
+    margin-left: 10px;
+	font: normal 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 40px;
+}
+ul.nav-01>li>b.drop-d{
+	height: 35px;
+    padding-bottom: 5px;
+    background: url(../img/arrow-d-1.png) no-repeat 50% 29px;
+}
+ul.nav-01>li:hover >b{
+	color: #f96302;
+}
+ul.nav-01>li:hover >b.drop-d{
+	background-image: url(../img/arrow-u-1.png);
+}
+ul.nav-01>li>ul.nav-02{
+    display: none;
+    position: absolute;
+    max-width: 210px;
+    margin: -1px 0px 0px;
+    padding: 0px;
+    list-style-type: none;
+    background: #4f4f58;
+}
+ul.nav-01>li:hover >ul.nav-02{
+	display: block;
+}
+ul.nav-02>li{
+	float: left;
+}
+ul.nav-02>li>a{
+    display: inline-block;
+    height: 20px;
+    margin: 0px 10px;
+    font: normal 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+ul.nav-02>li:hover >a{
+	color: #f96302;
+}
